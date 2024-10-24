@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Phoenix</title>
+    <title>Proyecto Fútbol</title>
     <link rel="stylesheet" href="styles/styles.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header class="main-header">
-      <h1>Bienvenidos al Proyecto Phoenix</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-content">
-      <section class="purpose-section">
-        <h2>Nuestro Propósito</h2>
-        <p>
-          El Proyecto Phoenix busca conectar a las personas a través de una red
-          de conocimiento y colaboración.
-        </p>
-      </section>
+        <img src="data:image/png;base64,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" alt="Logo" class="logo" /> <!-- Logo -->
+        <h1>Bienvenidos al Proyecto Fútbol</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
 
-      <section class="about-section">
-        <h2>Sobre Nosotros</h2>
-        <p>
-          Somos un equipo comprometido en brindar soluciones innovadoras a
-          problemas complejos.
-        </p>
-      </section>
+    </header>
+
+    <main class="main-content">
+
+        <section class="purpose-section">
+            <h2>Nuestro Propósito</h2>
+            <p>El Proyecto Futbol busca conectar a las personas a través de una red de conocimiento y colaboración en el mundo del fútbol.</p>
+            <img src="images/purpose.jpg" alt="Propósito del Proyecto" class="responsive-img" /> <!-- Imagen del propósito -->
+        </section>
+
+        <section class="about-section">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo comprometido en brindar soluciones innovadoras a problemas complejos en el ámbito futbolístico.</p>
+            <img src="images/team.jpg" alt="Nuestro Equipo" class="responsive-img" /> <!-- Imagen del equipo -->
+        </section>
+
+        <section class="news-section">
+            <h2>Últimas Noticias</h2>
+            <ul>
+                <li><strong>Partido emocionante:</strong> El equipo local ganó 3-2 en el último minuto.</li>
+                <li><strong>Nuevo fichaje:</strong> Nuestro equipo ha fichado a un nuevo delantero estrella.</li>
+                <li><strong>Torneo próximo:</strong> No te pierdas el torneo que comienza la próxima semana.</li>
+            </ul>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Fsearch%3Fq%3DCristiano%2BRonaldo&psig=AOvVaw1lZAXHxXVfbllW9U7B-NHI&ust=1729817397529000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODq3aXmpYkDFQAAAAAdAAAAABAE" alt="Imagen 1" class="gallery-img" />
+                <img src="https://w7.pngwing.com/pngs/666/150/png-transparent-messi-world-cup-2023-thumbnail.png" alt="Imagen 2" class="gallery-img" />
+                <img src="images/gallery3.jpg" alt="Imagen 3" class="gallery-img" />
+            </div>
+        </section>
     </main>
+
     <footer class="main-footer">
-      <p>© 2024 Proyecto Phoenix. Todos los derechos reservados.</p>
+        <p>© 2024 Proyecto Futbol. Todos los derechos reservados javier Serna.</p>
     </footer>
-  </body>
+</body>
 </html>

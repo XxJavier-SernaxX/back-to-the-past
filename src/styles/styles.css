@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     display: grid;
-    min-height: 100dvh;
+    min-height: 100vh;
     grid-template-rows: auto 1fr auto;
     margin: 0;
     padding: 0;
@@ -9,10 +9,14 @@ body {
 }
 
 .main-header {
-    background-color: #333;
+    background-color: #416b47; 
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+.logo {
+    width: 80px; 
 }
 
 nav ul {
@@ -22,8 +26,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline; 
+    margin-right: 10px; 
 }
 
 nav ul li a {
@@ -32,14 +36,52 @@ nav ul li a {
 }
 
 .main-content {
-    display: flex;
-    justify-content: space-around;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
     padding: 20px;
 }
 
-.purpose-section,
+.purpose-section {
+    background-color: #d4edda; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .about-section {
-    width: 45%;
+    background-color: #c3e6cb; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-section {
+    background-color: #28a745; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-section {
+    background-color: #155724; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-img {
+    width: 100%; 
+    height: auto; 
+}
+
+.gallery {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.gallery-img {
+    width: 30%; 
 }
 
 .main-footer {
@@ -47,7 +89,4 @@ nav ul li a {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
